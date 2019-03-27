@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href=".idea/7pdf.css">
+    <title>love</title>
+    <script>
+        setInterval(function(){
+            var x = Math.round( Math.random() * 255 );
+            var y = Math.round( Math.random() * 255 );
+            var z = Math.round( Math.random() * 255 );
+            var bg = "background:rgb("+x+", "+y+", "+z+");";
+            var element = document.getElementById("random-background");
+            element.style = bg;
+        }, 1000);
+    </script>
+
+    <style>
+        #random-background {
+            width: 100vw;
+            height: 100vh;
+            background: white;
+            margin: 0px;
+            transition: 1s;
+        }
+    </style>
+</head>
+<body>
+<body id = "random-background">
+<div id="l"><h1>L</h1></div>
+<div id="c1"></div>
+<div id="c2"></div>
+<div id="c3"></div>
+<div id="v"><h1>V</h1></div>
+<div id="e"><h1>E</h1></div>
+</body>
+</html>
